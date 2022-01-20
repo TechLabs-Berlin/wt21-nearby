@@ -1,11 +1,101 @@
-<h1>Das ist die Startseite</h1>
+<!DOCTYPE html>
+<html lang="en">
 
-<h2>Hallo {{name}} !</h2>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+		integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
 
-<form action="your-url">
-	<label for="Stichwortsuche">Stichwortsuche</label>
-		<br>
-		<input type="text", name="Stichwortsuche", value="", required>
-		<input type="submit", value="Suchen">
-</form>
+<body>
+	<header>
+		<div class="container">
+			<img src="" alt="logo nearby">
+		</div>
+		<div class="headerMenu">
+			<div class="hamburgerPic">
+				<button type="button" class="buttonHeaderMenu">
+					<div class="hamburger">
+						<i class="fas fa-bars"></i>
+					</div>
+					<div class="profileHeader">
+						<i class="fas fa-user-circle"></i>
+					</div>
+				</button>
+			</div>
+		</div>
+		</div>
+	</header>
+	<main>
+	<h1>Discover your local community</h1>
+	<form action="your-url">
+		<div>
+		  <input type="search" id="mySearch" name="q"
+		   placeholder="search for social services...">
+		  <button>Search</button>
+		</div>
+	  </form>
+		  <form action="your-url">
+			<div class="searchBar">
+			<div class="search">
+				<input type="search" id="mySearch" name="q"
+				placeholder="search for social services...">	
+			</div>
+			<div class="buttonSearch">
+				<button class="_buttonSearch">
+					<div class="circleButton">
+						<div class="searchIcon">
+							<i class="fas fa-search"></i>	
+						</div>
+					</div>
+				</button>
+			</div>
+			<div class="filter">
+				<button class="filterSearch">
+					<div class="filterButton">
+						<div class="filterIcon">
+						<i class="fas fa-filter"></i>	
+						</div>
+					</div>
+				</button>
+			</div>		
+			</div>
+		  </form>
+		  <div class="containerMain">
+			<div class="whatsNearby">
+			<h2>What's nearby?</h2>
+		</div>
+		<div class="housing_shelter">
+			<div class="title_h_s">
+				<h2>Housing/Shelter</h2>
+				</div>
+				<div class="img_h_s">
+					<img src="" alt="">
+				</div>
+			</div>
+			<div class="educationSupport">
+				<div class="title_e_s">
+					<h2>Education Support</h2>
+					</div>
+					<div class="img_e_s">
+						<img src="" alt="">
+					</div>
+				</div>
+				<div class="hungerRelief">
+					<div class="title_h_r">
+						<h2>Hunger Relief</h2>
+						</div>
+						<div class="img_h_r">
+							<img src="" alt="">
+						</div>
+					</div>
+		</div>
+	</main>
+</body>
 
+</html>
