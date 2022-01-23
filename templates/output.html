@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+		integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+	<header>
+		<div class="container">
+			<img src="" alt="logo nearby">
+		</div>
+		<div class="headerMenu">
+			<div class="hamburgerPic">
+				<button type="button" class="buttonHeaderMenu">
+					<div class="hamburger">
+						<i class="fas fa-bars"></i>
+					</div>
+					<div class="profileHeader">
+						<i class="fas fa-user-circle"></i>
+					</div>
+				</button>
+			</div>
+		</div>
+		<div>
+			{% for index, row in data.iterrows() %}
+			<div>
+				<h3> Anbieter: {{row.anbieter}} </h3>
+				<p> ID: {{row.id}} </p>
+				<p> Website: {{row.website}} </p>
+				<p> Zeitliche Begrenzung: {{row.zeitliche_begrenzung}} </p>
+				<p> Preis: {{row.preis}} </p>
+				<p> Bezirk: {{row.bezirk}} </p>
+				<p> Schlagworte: {{row.schlagworte}} </p>
+			</div>
+			{% endfor %}
+		</div>
+	</header>
+	<main>
+		<div>
+			
+		</div>
+	</main>
+</body>
+
+</html>
