@@ -25,14 +25,23 @@
 		</a>
 	</nav>
 	<main>
-		<div class="container-fluid">
+		<!-- <div class="container-fluid">
 			<div class="row justify-content-md-left g-5 p-3">
 				<div class="card col-3" style="width: 18rem;">
-					<img src="#" alt="#">
-				<div class="card-body">
-		<div>
+					<img src="" alt="#">
+				<div class="card-body"> -->
+		<!-- <div> -->
+			<!-- <div class="container-fluid">
+				<div class="row g-5 p-3">
+					<div class="card col" style="width: 18rem;">
+						<img src="" alt="#">
+						<div class="card-body"> -->
 			{% for index, row in data.iterrows() %}
-			<div>
+			<div class="container-fluid">
+				<div class="row justify-content-md-center g-5 p-3">
+					<div class="card col" style="width: 18rem;">
+						<img src="" alt="#">
+						<div class="card-body">
 				<h3> Anbieter: {{row.anbieter}} </h3>
 				<p> ID: {{row.id}} </p>
 				<p> Website: {{row.website}} </p>
@@ -46,7 +55,6 @@
 		<div>
 			
 		</div>
-	</div>
 	</div>
 	</div>
 	</div>
