@@ -2,12 +2,10 @@ h1 {
     text-align: center;
     padding: 1em;
 }
-
 h2 {
     padding: 1.5em;
     text-align: center;
 }
-
 #flex {
     background-color: aqua;
     display: flex;
@@ -21,7 +19,6 @@ h2 {
     row-gap: 10px;
     column-gap: 20px;
 }
-
 body {
     background-color: aqua;
 }
