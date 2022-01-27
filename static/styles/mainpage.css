@@ -21,3 +21,7 @@ h2 {
     row-gap: 10px;
     column-gap: 20px;
 }
+
+body {
+    background-color: aqua;
+}
