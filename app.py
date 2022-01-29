@@ -10,5 +10,5 @@ def home():
 	return render_template('input.html', name = 'Maria')
 
 @app.route('/output')
-def about():
+def output():
 	return render_template('output.html', data = data)
