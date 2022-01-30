@@ -29,8 +29,17 @@
 				</button>
 			</div>
 		</div>
-		<form action="{{ url_for('output') }}" method="GET">
-			<!-- <input type="hidden" name=> -->
+            <form action="{{ url_for('output') }}", method="GET">
+              <label for="cars">Wählen sie einen Bezirk</label>
+              <select name="bezirk" id="cars" multiple>
+                <option value="Kreuzberg">Kreuzberg</option>
+                <option value="Friedrichshain">Friedrichshain</option>
+                <option value="Neukölln">Neukölln</option>
+                <option value="Prenzlauer Berg">Prenzlauer Berg</option>
+              </select>
+              <br><br>
+              <input type="submit" value="Submit">
+            </form>
 	</header>
 	<main>
 	<h1>Discover your local community</h1>
