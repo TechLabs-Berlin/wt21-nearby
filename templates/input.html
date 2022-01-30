@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+		integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+	<header>
+		<div class="container">
+			<img src="" alt="logo nearby">
+		</div>
+		<div class="headerMenu">
+			<div class="hamburgerPic">
+				<button type="button" class="buttonHeaderMenu">
+					<div class="hamburger">
+						<i class="fas fa-bars"></i>
+					</div>
+					<div class="profileHeader">
+						<i class="fas fa-user-circle"></i>
+					</div>
+				</button>
+			</div>
+		</div>
+            <form action="{{ url_for('output') }}", method="GET">
+              <label for="cars">Wählen sie einen Bezirk</label>
+              <select name="bezirk" id="cars" multiple>
+                <option value="Kreuzberg">Kreuzberg</option>
+                <option value="Friedrichshain">Friedrichshain</option>
+                <option value="Neukölln">Neukölln</option>
+                <option value="Prenzlauer Berg">Prenzlauer Berg</option>
+              </select>
+              <br><br>
+              <input type="submit" value="Submit">
+            </form>
+	</header>
+	<main>
+	<h1>Discover your local community</h1>
+	<form action="your-url">
+
+	</main>
+</body>
+
+</html>
