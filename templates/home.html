@@ -61,8 +61,9 @@
 					</form>
 				</div>
 				<div class="col-3">
+					<form action=" {{ url_for('out') }} ", method="GET">
 					<label>Search by services</label>
-					<select class="form-control" id="#">
+					<select name="services" class="form-control" id="#">
 						<option>All services</option>
 						<option>Education</option>
 						<option>Family Care & Support</option>
@@ -72,6 +73,7 @@
 						<option>Cultural Activites</option>
 						<option>Sport & Health</option>
 					</select>
+					</form>
 				</div>
 					<button class="btn btn-primary col-2" type="submit" formaction=" {{ url_for('out') }} ">Search</button>
 			</div>
