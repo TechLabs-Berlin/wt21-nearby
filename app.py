@@ -12,4 +12,5 @@ def home():
 @app.route('/out')
 def out():
     bezirk = request.args.get('bezirk')
+    services = request.args.get('services')
     return render_template('output.html', data=data, bezirk=bezirk)
