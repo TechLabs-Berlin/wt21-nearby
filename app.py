@@ -13,4 +13,4 @@ def home():
 def out():
     bezirk = request.args.get('bezirk')
     services = request.args.get('services')
-    return render_template('output.html', data=data, bezirk=bezirk)
+    return render_template('output.html', data=data, bezirk=bezirk, services=services)
