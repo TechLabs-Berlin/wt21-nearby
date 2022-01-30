@@ -44,13 +44,12 @@
 		{% for index, row in data.iterrows()%}
 		<div class="columns">
 			<div class="info">
-					<h3> Anbieter: {{row.anbieter}} </h3>
-					<p> ID: {{row.id}} </p>
+					<h3>{{row.anbieter}} </h3>
 					<p> Website: {{row.website}} </p>
 					<p> Zeitliche Begrenzung: {{row.zeitliche_begrenzung}} </p>
 					<p> Preis: {{row.preis}} </p>
 					<p> Bezirk: {{row.bezirk}} </p>
-					<p> Schlagworte: {{row.schlagworte}} </p>
+					<p>{{row.kurzbeschreibung_des_angebotes}}</p>
 				</div>
 				<div class="img-div">
 				<img src="https://img.freepik.com/free-vector/people-carrying-icons-related-insurance_53876-59883.jpg?size=626&ext=jpg&ga=GA1.2.1579370416.1637712000" alt="#">
