@@ -36,25 +36,27 @@
 					<input type="search" class="form-control" placeholder="Search for social services...">
 				</div>
 				<div class="col-3">
-					<label>Search by neighborhood</label>
-					<select class="form-control" id="#">
-						<option>All neighborhoods</option>
-						<option>Charlottenburg-Wilmersdorf</option>
-						<option>Friedrichshain-Kreuzberg</option>
-						<option>Kreuzberg</option>
-						<option>Lichtenberg</option>
-						<option>Marzahn-Hellersdorf</option>
-						<option>Mitte</option>
-						<option>Neukölln</option>
-						<option>Oranienburg</option>
-						<option>Pankow</option>
-						<option>Potsdam</option>
-						<option>Reinickendorf</option>
-						<option>Spandau</option>
-						<option>Steglitz-Zehlendorf</option>
-						<option>Tempelhof-Schöneberg</option>
-						<option>Treptow-Köpenick</option>
-					</select>
+					<form action=" {{ url_for('out') }} ", method="GET">
+						<label for="bezirk">Search by neighborhood</label>
+						<select name="bezirk" class="form-control" id="#">
+							<option>All neighborhoods</option>
+							<option>Charlottenburg-Wilmersdorf</option>
+							<option>Friedrichshain-Kreuzberg</option>
+							<option>Kreuzberg</option>
+							<option>Lichtenberg</option>
+							<option>Marzahn-Hellersdorf</option>
+							<option>Mitte</option>
+							<option>Neukölln</option>
+							<option>Oranienburg</option>
+							<option>Pankow</option>
+							<option>Potsdam</option>
+							<option>Reinickendorf</option>
+							<option>Spandau</option>
+							<option>Steglitz-Zehlendorf</option>
+							<option>Tempelhof-Schöneberg</option>
+							<option>Treptow-Köpenick</option>
+						</select>
+					</form>
 				</div>
 				<div class="col-3">
 					<label>Search by services</label>
@@ -69,7 +71,7 @@
 						<option>Sport & Health</option>
 					</select>
 				</div>
-					<button class="btn btn-primary col-2" type="submit">Search</button>
+					<button class="btn btn-primary col-2" type="submit" formaction=" {{ url_for('out') }} ">Search</button>
 			</div>
 		</div>
 		</form>
