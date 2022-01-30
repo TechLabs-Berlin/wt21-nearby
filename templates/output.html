@@ -17,14 +17,14 @@
 	<!-- <link rel="stylesheet" type="text/css" href="css/style.css"> -->
 	<!-- <link rel="stylesheet" href="/static/style.css"> -->
 	<!-- <link rel= "stylesheet" type= "text/css" href= "url_for('static',filename='styles/mainpage.css') }}"> -->
-	<link rel= "stylesheet" type= "text/css" href= {{ url_for('static', filename='css/style.css') }}>
+	<link rel="stylesheet" type="text/css" href={{ url_for('static', filename='css/style.css' ) }}>
 
 </head>
 
 <body>
 	<nav class="navbar navbar-light bg-light">
 		<a class="navbar-brand" href="#">
-			<img src="#" width="30" height="30" class="d-inline-block align-top" alt="">
+			<img src="/static/imgs/logo.svg" width="80" alt="">
 			Nearby
 		</a>
 	</nav>
@@ -40,12 +40,10 @@
 					<div class="card col" style="width: 18rem;">
 						<img src="" alt="#">
 						<div class="card-body"> -->
-
+							<h1>Organisations nearby</h1>
 		{% for index, row in data.iterrows()%}
-		<div>
-			<div class="col-4">
-				<img src="" alt="#">
-				<div class="card-body"> 
+		<div class="columns">
+			<div class="info">
 					<h3> Anbieter: {{row.anbieter}} </h3>
 					<p> ID: {{row.id}} </p>
 					<p> Website: {{row.website}} </p>
@@ -54,9 +52,11 @@
 					<p> Bezirk: {{row.bezirk}} </p>
 					<p> Schlagworte: {{row.schlagworte}} </p>
 				</div>
-				</div>
-				</div>
-				{% endfor %}
+				<div class="img-div">
+				<img src="https://img.freepik.com/free-vector/people-carrying-icons-related-insurance_53876-59883.jpg?size=626&ext=jpg&ga=GA1.2.1579370416.1637712000" alt="#">
+			</div>
+			</div>
+		{% endfor %}
 	</main>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
