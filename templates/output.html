@@ -29,18 +29,56 @@
 		</a>
 	</nav>
 	<main>
-		<!-- <div class="container-fluid">
-			<div class="row justify-content-md-left g-5 p-3">
-				<div class="card col-3" style="width: 18rem;">
-					<img src="" alt="#">
-				<div class="card-body"> -->
-		<!-- <div> -->
-		<!-- <div class="container-fluid">
-				<div class="row g-5 p-3">
-					<div class="card col" style="width: 18rem;">
-						<img src="" alt="#">
-						<div class="card-body"> -->
-							<h1>Organisations nearby</h1>
+		<h1>Organisations nearby</h1>
+		<form class="homepage">
+			<div class="container">
+			<div class="row justify-content-md-center">
+				<div class="col-4">
+					<label>Search</label>
+					<input type="search" class="form-control" placeholder="Search for social services...">
+				</div>
+				<div class="col-3">
+					<form action=" {{ url_for('out') }} ", method="GET">
+						<label for="bezirk">Search by neighborhood</label>
+						<select name="bezirk" class="form-control" id="#">
+							<option>All neighborhoods</option>
+							<option>Charlottenburg-Wilmersdorf</option>
+							<option>Friedrichshain-Kreuzberg</option>
+							<option>Kreuzberg</option>
+							<option>Lichtenberg</option>
+							<option>Marzahn-Hellersdorf</option>
+							<option>Mitte</option>
+							<option>Neukölln</option>
+							<option>Oranienburg</option>
+							<option>Pankow</option>
+							<option>Potsdam</option>
+							<option>Reinickendorf</option>
+							<option>Spandau</option>
+							<option>Steglitz-Zehlendorf</option>
+							<option>Tempelhof-Schöneberg</option>
+							<option>Treptow-Köpenick</option>
+						</select>
+					</form>
+				</div>
+				<div class="col-3">
+					<form action=" {{ url_for('out') }} ", method="GET">
+					<label>Search by services</label>
+					<select name="services" class="form-control" id="#">
+						<option>All services</option>
+						<option>Education</option>
+						<option>Family Care & Support</option>
+						<option>Free Time Activites</option>
+						<option>Senior Center</option>
+						<option>Youth Center</option>
+						<option>Cultural Activites</option>
+						<option>Sport & Health</option>
+					</select>
+					</form>
+				</div>
+					<button class="btn btn-primary col-2" type="submit" formaction=" {{ url_for('out') }} ">Search</button>
+			</div>
+		</div>
+		</form>
 		<div>
             <p> Du hast diesen Bezirk ausgewählt {{ bezirk }} </p>
 			<p> Du hast diesen Service ausgewählt {{ services }} </p>
