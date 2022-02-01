@@ -13,4 +13,7 @@ def home():
 def out():
     bezirk = request.args.get('bezirk')
     services = request.args.get('services')
+    global data
+    filter_bezirk = data['bezirk'] == bezirk
+    data = data[filter_bezirk]
     return render_template('output.html', data=data, bezirk=bezirk, services=services)
