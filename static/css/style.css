@@ -116,3 +116,6 @@ p {
     padding: 60px;
     margin-bottom: 4em;
 }
+.card {
+border: none;
+}
