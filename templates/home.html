@@ -32,16 +32,16 @@
 		<img src="/static/imgs/berlin-homepage.jpg" class="img-fluid" class="image" alt="Berlin">
 		<form class="homepage" id="form">
 			<h1 class="overlay-text">Discover your local community</h1>
-			<div class="container">
+			<div class="container" id="form">
 				<div class="row justify-content-md-center">
 					<div class="col-4">
 						<label class="label-hp">Search</label>
-						<input type="search" class="form-control" id="form" placeholder="Search for social services...">
+						<input type="search" class="form-control" id="#" placeholder="Search for social services...">
 					</div>
 					<div class="col-3">
 						<form action=" {{ url_for('out') }} " , method="GET">
 							<label for="bezirk" class="label-hp">Search by neighborhood</label>
-							<select name="bezirk" class="form-control" id="form">
+							<select name="bezirk" class="form-control" id="#">
 								<option>All neighborhoods</option>
 								<option>Charlottenburg-Wilmersdorf</option>
 								<option>Friedrichshain-Kreuzberg</option>
@@ -62,7 +62,7 @@
 					</div>
 					<div class="col-3">
 						<label class="label-hp" for="services">Search by services</label>
-						<select name="services" class="form-control" id="form">
+						<select name="services" class="form-control" id="#">
 							<option>All services</option>
 							<option>Education</option>
 							<option>Family Care & Support</option>
@@ -72,9 +72,12 @@
 							<option>Cultural Activites</option>
 							<option>Sport & Health</option>
 						</select>
+						</div>
+						<button class="btn btn-primary col-2" type="submit" formaction=" {{ url_for('out') }} ">Search</button>
+				</div>
+			</div>
 		</form>
 		</div>
-		<button class="btn btn-primary col-2" type="submit" formaction=" {{ url_for('out') }} ">Search</button>
 		</div>
 		</div>
 		</form>

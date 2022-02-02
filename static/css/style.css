@@ -73,7 +73,7 @@ p {
   }
 #nav_output {
     background: #f2f2f2;
-    position: fixed;
+    position: relative;
 }
 
   .logo-nearby {
@@ -94,17 +94,25 @@ p {
 
 #form {
     position: absolute;
+    padding: 40px;
     top: 45%;
     left: 0;
+    right: 0;
     width: 100%;
 }
 
 .label-hp {
     color: #fff;
     font-size: 25px;
+    font-weight: 400;
 }
 
 .form-control {
     height: 90px;
     border-radius: 10px;
+}
+
+.overlay-text {
+    padding: 60px;
+    margin-bottom: 4em;
 }
