@@ -81,6 +81,14 @@ culture <- "Architektur|Geschichte|Kabarett|Kino|Kommunikation|Konzert|Kultur|Ku
 # Sport & Health:
 sport <- "Beratung|Natur & Erholung|Sport & Spiel|Tanz"
 
+
+# Add all neighborhoods ---------------------------------------------------
+all_neighborhoods <- df %>% 
+  mutate(bezirk = "All neighborhoods")
+
+df <- bind_rows(df, all_neighborhoods)
+
+
 # Create df ---------------------------------------------------------------
 df_cat <- df %>%
   mutate(
@@ -100,10 +108,12 @@ df_cat <- df %>%
   distinct()
 
 # Add "all" categories ----------------------------------------------------
-all_neighborhoods <- df %>% 
-  mutate(bezirk = "All neighborhoods")
 all_services <- df %>% 
   mutate(services = "All services")
-df_all <- bind_rows(df_cat, all_neighborhoods, all_services)
+df_all <- bind_rows(df_cat, all_services)
+
+df_all %>% 
+  filter(bezirk == "All neighborhoods")
 
 write_csv2(df_all, "data.csv")
+
