@@ -16,6 +16,7 @@ def out():
     services = request.args.get('services')
     global data
     filter_bezirk = data['bezirk'] == bezirk
-    data = data[filter_bezirk]
+    filter_services = data['services'] == services
+    data = data[(filter_bezirk) & (filter_services)]
     print('data', data, 'bezirk', bezirk, 'services', services)
     return render_template('output.html', data=data, bezirk=bezirk, services=services)
