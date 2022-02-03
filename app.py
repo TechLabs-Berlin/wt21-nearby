@@ -7,7 +7,8 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return render_template('home.html', name='Maria')
+    return render_template('home.html')
+
 
 @app.route('/out')
 def out():
@@ -16,4 +17,5 @@ def out():
     global data
     filter_bezirk = data['bezirk'] == bezirk
     data = data[filter_bezirk]
+    print('data', data, 'bezirk', bezirk, 'services', services)
     return render_template('output.html', data=data, bezirk=bezirk, services=services)
