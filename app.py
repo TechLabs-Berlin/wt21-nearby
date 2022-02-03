@@ -14,6 +14,7 @@ def home():
 def out():
     bezirk = request.args.get('bezirk')
     services = request.args.get('services')
+    search = request.args.get('search')
     global df
     data = df
     #print('bezirk', bezirk)
@@ -23,5 +24,5 @@ def out():
     #print('FILTER BEZIRK', "*"*100, filter_bezirk)
     #print('FILTER SERVICES', "*"*100, filter_services)
     data = data[(filter_bezirk) & (filter_services)]
-    #print('data', data, 'bezirk', bezirk, 'services', services)
+    print('data', data, 'bezirk', bezirk, 'services', services)
     return render_template('output.html', data=data, bezirk=bezirk, services=services)

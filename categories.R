@@ -99,4 +99,11 @@ df_cat <- df %>%
   select(-name) %>% 
   distinct()
 
-write_csv2(df_cat, "data.csv")
+# Add "all" categories ----------------------------------------------------
+all_neighborhoods <- df %>% 
+  mutate(bezirk = "All neighborhoods")
+all_services <- df %>% 
+  mutate(services = "All services")
+df_all <- bind_rows(df_cat, all_neighborhoods, all_services)
+
+write_csv2(df_all, "data.csv")

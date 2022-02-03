@@ -33,13 +33,13 @@
 		<form class="homepage" id="form">
 			<h1 class="overlay-text">Discover your local community</h1>
 			<div class="container" id="form">
+				<form action=" {{ url_for('out') }} " , method="GET">
 				<div class="row justify-content-md-center">
 					<div class="col-4">
 						<label class="label-hp">Search</label>
-						<input type="search" class="form-control" id="#" placeholder="Search for social services...">
+						<input type="search" class="form-control" id="#" placeholder="Search for social services...", name="search">
 					</div>
 					<div class="col-3">
-						<form action=" {{ url_for('out') }} " , method="GET">
 							<label for="bezirk" class="label-hp">Search by neighborhood</label>
 							<select name="bezirk" class="form-control" id="#">
 								<option>All neighborhoods</option>
