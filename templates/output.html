@@ -31,14 +31,14 @@
 	<main>
 		<!-- <h1>Organisations nearby</h1> -->
 		<form class="homepage">
+			<form action=" {{ url_for('out') }} ", method="GET">
 			<div class="container">
 			<div class="row justify-content-md-center">
 				<div class="col-4">
 					<label>Search</label>
-					<input type="search" class="form-control" placeholder="Search for social services...">
+					<input type="search" class="form-control" placeholder="Search for social services...", name="search">
 				</div>
 				<div class="col-3">
-					<form action=" {{ url_for('out') }} ", method="GET">
 						<label for="bezirk">Search by neighborhood</label>
 						<select name="bezirk" class="form-control" id="#">
 							<option>All neighborhoods</option>
