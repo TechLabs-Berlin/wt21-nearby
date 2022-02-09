@@ -1,0 +1,5 @@
+# Nearby - find NGOs, shelters and social services in your area!
+
+## Project Summary
+
+Nearby began with a simple question - how can we connect people to local social services? According to our survey, most people resort to a broad internet search. The issue however is that a general internet search rarely yields the type of information you’re looking for and many nonprofits and NGOs don’t have all their information publicly available, or are lacking up to date info. Throughout our lives, that are many situations that may leave us in need of social assistance: maybe you’ve recently been laid off and are in need of employment assistance. Or you might be a parent in search of child care and local family centers. Or maybe you’ve recently moved to town and are curious how to connect with your local community. Sometimes you don’t even know what you are searching for, but you need help. Creating an application that helps users narrow and filter their search by location and type, and also is comprehensive can help. That’s where Nearby comes in!
